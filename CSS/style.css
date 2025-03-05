@@ -160,7 +160,7 @@ h1{
 
 #timer-display {
     color:#6e0000;
-    font-size: 100px;
+    font-size: 70px;
 }
 
 .buttons {
@@ -229,8 +229,8 @@ h1{
 }
 .select_img{
     width: auto;
-    height: 138px; 
-    margin-bottom: 20px; 
+    height: 120px; 
+    margin-bottom: 15px; 
     transition: transform 0.3s ease;
 }
 .select_img:hover {
