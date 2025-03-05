@@ -120,7 +120,7 @@ h1{
 }
 
 .close {
-    background-image: url('../IMG/close.png'');
+    background-image: url('../IMG/close.png');
     background-size: contain;
     background-repeat: no-repeat; 
     width: 50px; 
