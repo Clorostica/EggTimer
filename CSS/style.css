@@ -38,13 +38,12 @@ h1{
     overflow: hidden; /* Asegura que cualquier contenido desbordante no se vea */
 }
 .titulo-container {
-    font-size: 2.5rem;
-    font-weight: bold;
-    background: linear-gradient(45deg, #ff416c, #ff4b2b, #ff9a44, #ff4b2b, #ff416c);
-    background-size: 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient 6s infinite linear, heartbeat 1.5s infinite ease-in-out;
+    margin-left: 10px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #ff8002;
 }
 .main_background {
     width: 100%;
