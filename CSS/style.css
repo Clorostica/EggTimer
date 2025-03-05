@@ -62,7 +62,17 @@ h1{
     padding: 20px;
 }
 
-  .main_title {
+@keyframes colorGlow {
+    0% { text-shadow: 0 0 5px #ff416c, 0 0 10px #ff4b2b, 0 0 15px #ff9a44; }
+    50% { text-shadow: 0 0 10px #ff4b2b, 0 0 20px #ff9a44, 0 0 25px #ff416c; }
+    100% { text-shadow: 0 0 5px #ff416c, 0 0 10px #ff4b2b, 0 0 15px #ff9a44; }
+}
+
+@keyframes titleBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}  
+.main_title {
             font-size: 2.5rem;
             font-weight: bold;
             text-align: center;
@@ -230,14 +240,4 @@ h1{
     text-align: center;
     margin: 0 10px;
 }
-@keyframes heartbeat {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
- }
-
- @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    00% { background-position: 0% 50%; }
      
