@@ -38,14 +38,28 @@ h1{
     overflow: hidden; /* Asegura que cualquier contenido desbordante no se vea */
 }
 
+@keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+@keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
 .titulo-container {
-    margin-left: 10px;
-    text-align: left;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 40px;
-    color: #ff8002;
-}
+            font-size: 3rem;
+            font-weight: bold;
+            text-align: center;
+            background: linear-gradient(45deg, #ff416c, #ff4b2b, #ff9a44, #ff4b2b, #ff416c);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 6s infinite linear, heartbeat 1.5s infinite ease-in-out;
+        }
 
 .main_background {
     width: 100%;
