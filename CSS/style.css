@@ -52,7 +52,7 @@ h1{
     height: 800px; 
     box-sizing: border-box; /* Asegura que el padding no afecte la altura */
     border: 3px solid #ff8002;
-    background-image: url('https://clorostica.github.io/IMG/background.png');
+    background-image: url('../IMG/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -120,7 +120,7 @@ h1{
 }
 
 .close {
-    background-image: url('https://clorostica.github.io/IMG/close.png');
+    background-image: url('../IMG/close.png'');
     background-size: contain;
     background-repeat: no-repeat; 
     width: 50px; 
@@ -137,7 +137,7 @@ h1{
     transition: transform 0.3s ease; 
 }
 .minimize {
-    background-image: url('IMG/MINIMIZE.png');
+    background-image: url('../IMG/minimize.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 50px;
