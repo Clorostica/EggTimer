@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+:root {
+    --color-primario: #3498db;   
+    --color-secundario: #2ecc71; 
+    --color-fondo: #f5f5f5;    
+    --color-texto: #6e0000;    
+}
+
+h1{
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color:#6e0000;
+}
+.container {
+    width: 100%;
+    max-width: 1000px; /* Ancho máximo de 1000px */
+    background-color: #fede43;
+    border-radius: 33px;
+    padding: 40px 20px; /* 40px de espacio arriba y abajo, 20px a los lados */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    overflow: hidden; /* Asegura que cualquier contenido desbordante no se vea */
+}
+
+.titulo-container {
+    margin-left: 10px;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #ff8002;
+}
+
+.main_background {
+    width: 100%;
+    height: 800px; 
+    box-sizing: border-box; /* Asegura que el padding no afecte la altura */
+    border: 3px solid #ff8002;
+    background-image: url('IMG/BACKGROUND.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.main_title {
+    font-size: 3.5rem;
+    padding-top: 190px; 
+    padding-bottom: 40px; /* Esto agrega espacio abajo */
+    box-sizing: border-box; 
+}
+#pantallaInicio{
+    display: block;
+}
+
+.start {
+    font-size: 36px;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 20px 30px;
+    background-color: #feecac;
+    border: 3px solid #ff8002;
+    color: #6e0000;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.start:hover {
+        background-color: #ff8002; /* Cambia el color de fondo al pasar el mouse */
+        transform: scale(1.1); /* Aumenta el tamaño del botón un 10% */
+        transition: transform 0.3s ease; 
+}
+.stop {
+    font-size: 36px;
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 20px 30px;
+    background-color: #feecac;
+    border: 3px solid #ff8002;
+    color: #6e0000;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.stop:hover {
+        background-color: #ff8002; /* Cambia el color de fondo al pasar el mouse */
+        transform: scale(1.1); /* Aumenta el tamaño del botón un 10% */
+        transition: transform 0.3s ease; 
+}
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fede43;
+    border-radius: 33px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative; 
+}
+
+.close {
+    background-image: url('IMG/close.png');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    width: 50px; 
+    height: 50px; 
+    border: none; 
+    cursor: pointer; 
+    position: absolute; 
+    top: 10px; 
+    right: 20px; 
+    margin-top: 10px;
+}
+.close:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+.minimize {
+    background-image: url('IMG/MINIMIZE.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 80px; 
+    margin-top: 10px;
+}
+.minimize:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+.botonTipo {
+    font-size: 18px;
+    width: 200px;
+}
+
+#timer-display {
+    color:#6e0000;
+    font-size: 100px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.select{
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 40px; 
+    justify-items: center; 
+}
+.select_button:hover {
+    background-color: #ff8002; 
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}
+.select_img{
+    width: auto;
+    height: 138px; 
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease;
+}
+.select_button {
+    font-size: 20px;
+    width: 210px; 
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 14px 14px;
+    background-color: #feecac;
+    border: 3px solid #ff8002;
+    color: #6e0000;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.timer_button{
+    font-size: 20px;
+    width: 210px; 
+    font-family: "Pixelify Sans", sans-serif;
+    padding: 14px 14px;
+    background-color: #feecac;
+    border: 3px solid #ff8002;
+    color: #6e0000;
+    border-radius: 30px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.timer_button:hover{
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    background-color: #ff8002; 
+}
+.select_title {
+    font-size: 42px;
+    display: block; 
+    width: 100%;    
+    text-align: center; 
+    padding-bottom: 20px;
+}
+.item {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;  
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 10px;
+}
+.select_img:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+}

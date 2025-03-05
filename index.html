@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egg Timer</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/media_queries.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo-container">Egg Timer <3</h1>  
+        <div class="main_background" id="pantallaInicio">
+            <button class="minimize" onclick="minimizarVentana()"></button>
+            <button class="close" onclick="cerrarApp()"></button>
+            <h1 class="main_title">Let's time your egg!</h1>
+            <button class="start" id="startBtn" onclick="redirigirASelect()">Let's Start</button>
+        </div>
+    </div>
+<script src="/JS/script.js"></script>
+<script>
+    function redirigirASelect() {
+        window.location.href = "select.html"; // Cambia "select.html" por la ruta correcta de la página de selección.
+    }
+</script>
+</body>
+</html>
+
