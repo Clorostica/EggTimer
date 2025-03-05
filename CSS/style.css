@@ -52,7 +52,7 @@ h1{
     height: 800px; 
     box-sizing: border-box; /* Asegura que el padding no afecte la altura */
     border: 3px solid #ff8002;
-    background-image: url('IMG/BACKGROUND.png');
+    background-image: url('https://clorostica.github.io/IMG/background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
