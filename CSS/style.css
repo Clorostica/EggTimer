@@ -1,21 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
-@keyframes heartbeat {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
- }
 
- @keyframes gradient {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    00% { background-position: 0% 50%; }
-     
 :root {
     --color-primario: #3498db;   
     --color-secundario: #2ecc71; 
     --color-fondo: #f5f5f5;    
     --color-texto: #6e0000;    
 }
+
 body {
     font-family: "Pixelify Sans", sans-serif;
     margin: 0;
