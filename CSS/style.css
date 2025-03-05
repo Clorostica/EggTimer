@@ -180,12 +180,6 @@ h1{
     transform: scale(1.1); 
     transition: transform 0.3s ease; 
 }
-.select_img{
-    width: auto;
-    height: 138px; 
-    margin-bottom: 20px; 
-    transition: transform 0.3s ease;
-}
 .select_button {
     font-size: 20px;
     width: 210px; 
@@ -232,6 +226,12 @@ h1{
     box-sizing: border-box;
     text-align: center;
     margin: 0 10px;
+}
+.select_img{
+    width: auto;
+    height: 138px; 
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease;
 }
 .select_img:hover {
     transform: scale(1.1); 
