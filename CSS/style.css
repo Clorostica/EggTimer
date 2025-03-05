@@ -81,8 +81,8 @@ h1{
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: gradient 6s infinite linear, heartbeat 1.5s infinite ease-in-out;
-            margin-top: 70px;
-            margin-bottom:70px
+            margin-top: 140px;
+            margin-bottom:50px
         }
 #pantallaInicio{
     display: block;
