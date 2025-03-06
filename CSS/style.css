@@ -61,30 +61,38 @@ h1{
     padding: 20px;
 }
 .main_title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     text-align: center;
     background: linear-gradient(45deg, #ff416c, #ff4b2b, #ff9a44, #ff4b2b, #ff416c);
     background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient 6s infinite linear, heartbeat 1.5s infinite ease-in-out, colorGlow 1.5s infinite ease-in-out;
+    animation: gradient 6s infinite linear, bounce 1.5s infinite ease-in-out, glowEffect 2s infinite alternate;
     margin-top: 140px;
     margin-bottom: 50px;
-    text-shadow: 0 0 5px #ff416c, 0 0 10px #ff4b2b, 0 0 15px #ff9a44; /* Agregar text-shadow aquí */
-}
-@keyframes colorGlow {
-    0% { text-shadow: 0 0 5px #ff416c, 0 0 10px #ff4b2b, 0 0 15px #ff9a44; }
-    50% { text-shadow: 0 0 10px #ff4b2b, 0 0 20px #ff9a44, 0 0 25px #ff416c; }
-    100% { text-shadow: 0 0 5px #ff416c, 0 0 10px #ff4b2b, 0 0 15px #ff9a44; }
+    text-shadow: 0 0 10px #ff416c, 0 0 20px #ff4b2b, 0 0 30px #ff9a44;
 }
 
-@keyframes titleBounce {
+/* Cambio del color de fondo */
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Efecto de rebote para un toque juguetón */
+@keyframes bounce {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+    50% { transform: translateY(-10px); }
 }
 
-
+/* Efecto de resplandor más suave */
+@keyframes glowEffect {
+    0% { text-shadow: 0 0 10px #ff416c, 0 0 20px #ff4b2b, 0 0 30px #ff9a44; }
+    50% { text-shadow: 0 0 20px #ff9a44, 0 0 40px #ff4b2b, 0 0 60px #ff416c; }
+    100% { text-shadow: 0 0 10px #ff416c, 0 0 20px #ff4b2b, 0 0 30px #ff9a44; }
+}
 #pantallaInicio{
     display: block;
 }
